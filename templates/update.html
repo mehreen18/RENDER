@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+    {% block body %}
+    
+    <div class="container"><form action="/update/{{todo.sno}}" method="post">
+      <h3> Update your TODO </h3>
+ 
+  <div class="mb-3">
+    <label for="title" class="form-label">Todo title</label>
+    <input type="text" class="form-control" name="title" value="{{todo.title}}" id="title" aria-describedby="emailHelp">
+    
+  </div>
+  <div class="mb-3">
+    <label for="desc" class="form-label">Todo description</label>
+    <input type="text" class="form-control" value="{{todo.desc}}" name="desc" id="desc">
+  </div>
+  
+  
+  <button type="submit" class="btn btn-dark btn-primary">Submit</button></form>
+
+<!-- <h3>Yours Todo</h3>
+
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">SNo</th>
+      <th scope="col">title</th>
+      <th scope="col">description</th>
+      <th scope="col">time</th>
+    </tr>
+  </thead>
+ <tbody>
+  {% if alltodo|length == 0 %}
+    <div class="alert alert-dark" role="alert">
+  No Todos found. Ad your first todo now!
+</div>
+  {% else %}
+    {% for todo in alltodo %}
+      <tr>
+        <th scope="row">{{ loop.index }}</th>
+        <td>{{ todo.title }}</td>
+        <td>{{ todo.desc }}</td>
+        <td>{{ todo.date_created }}</td>
+        <td>
+          <a href="{{ url_for('delete', sno=todo.sno) }}" class="btn btn-outline-dark btn-sm mx-1">Delete</a>
+          <a href="{{ url_for('update', sno=todo.sno) }}" class="btn btn-outline-dark btn-sm mx-1">Update</a>
+        </td>
+      </tr> -->
+    {% endfor %}
+  {% endif %}
+<!-- </tbody>
+</table> -->
+{% endblock body  %}

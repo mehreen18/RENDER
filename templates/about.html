@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!-- Dark Hero Section -->
+<div class="bg-dark text-white text-center py-5">
+  <div class="container">
+    <h1 class="display-5 fw-bold">About This TODO App</h1>
+    <p class="lead text-white-50">A simple, fast, and reliable way to manage your daily tasks.</p>
+  </div>
+</div>
+
+<!-- White Content Section -->
+<div class="bg-white text-dark py-5">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8">
+        <div class="card shadow-sm border-0">
+          <div class="card-body p-4">
+            <h4 class="card-title mb-3">Our Mission</h4>
+            <p class="card-text">
+              This TODO application was built to help individuals and teams stay organized
+              without unnecessary complexity. Whether you're planning your day, tracking
+              long-term goals, or managing a project, our app provides a clean and intuitive
+              interface to add, update, and remove tasks effortlessly.
+            </p>
+            <p class="card-text mb-0">
+              Built with <strong>Flask</strong> and <strong>SQLAlchemy</strong> on the backend,
+              and styled with <strong>Bootstrap 5</strong> on the frontend, this project
+              demonstrates a full CRUD (Create, Read, Update, Delete) workflow in a lightweight,
+              self-contained web application.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Dark Feature Section -->
+<div class="bg-dark text-white py-5">
+  <div class="container">
+    <h3 class="text-center mb-4">What You Can Do</h3>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 bg-secondary text-white border-0 text-center">
+          <div class="card-body">
+            <div class="fs-1 mb-3">📝</div>
+            <h5 class="card-title">Simple Task Creation</h5>
+            <p class="card-text text-white-50">
+              Quickly add tasks with a title and description in just a few clicks.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 bg-secondary text-white border-0 text-center">
+          <div class="card-body">
+            <div class="fs-1 mb-3">✏️</div>
+            <h5 class="card-title">Easy Editing</h5>
+            <p class="card-text text-white-50">
+              Update task details anytime as your plans change.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 bg-secondary text-white border-0 text-center">
+          <div class="card-body">
+            <div class="fs-1 mb-3">🗑️</div>
+            <h5 class="card-title">Clean Removal</h5>
+            <p class="card-text text-white-50">
+              Delete completed or unwanted tasks to keep your list clutter-free.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- White Tech Stack Section -->
+<div class="bg-white text-dark py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card shadow-sm border-0">
+          <div class="card-body p-4">
+            <h4 class="card-title mb-3">Built With</h4>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge bg-dark">Flask</span>
+              <span class="badge bg-secondary">SQLAlchemy</span>
+              <span class="badge bg-primary">Bootstrap 5</span>
+              <span class="badge bg-info text-dark">SQLite</span>
+              <span class="badge bg-success">Jinja2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock body %}
